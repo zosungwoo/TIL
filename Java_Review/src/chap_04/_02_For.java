@@ -14,6 +14,6 @@ public class _02_For {
             move += 3;
         }
         System.out.println("도착!");
-
+        //
     }
 }

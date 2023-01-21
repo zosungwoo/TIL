@@ -1,6 +1,6 @@
 # TIL
 
-### Java review
+## Java Review
 1. [Data Type and Variable](./Java_Review/src/chap_01)
 2. [Operator](./Java_Review/src/chap_02)
 3. [String](./Java_Review/src/chap_03)

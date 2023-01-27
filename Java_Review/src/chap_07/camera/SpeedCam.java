@@ -1,5 +1,6 @@
 package chap_07.camera;
 
+// SpeedyCam is a camera (IS-A 관계)
 public class SpeedCam extends Camera{
 //    public String name;
 
@@ -23,4 +24,8 @@ public class SpeedCam extends Camera{
         System.out.println("번호판을 인식합니다.");
     }
 
+    @Override  // annotation
+    public void showMainFeature() {
+        System.out.println(this.name + "의 주요 기능: 속도 측정, 번호 인식");
+    }
 }

@@ -1,5 +1,6 @@
 package chap_07.camera;
 
+// FactoryCam is a camera (IS-A 관계)
 public class FactoryCam extends Camera {
 //    public String name;
 
@@ -17,5 +18,10 @@ public class FactoryCam extends Camera {
 
     public void detectFire() {
         System.out.println("화재를 감지합니다.");
+    }
+
+    @Override
+    public void showMainFeature() {
+        System.out.println(this.name + "의 주요 기능: 화재 감지");
     }
 }

@@ -8,7 +8,7 @@ public class _10_AccessModifier {
         // private: 해당 클래스 내에서만 접근 가능
         // public: 모든 클래스에서 접근 가능
         // default: (명시되지 않았을 때) 같은 패키지 내에서만 접근 거눙
-        // protected: 같은 패키지 내에서, 그리고 다른 패키지인 경우 자식 클래스에에서 접근 가능
+        // protected: 같은 패키지 내에서, 그리고 다른 패키지인 경우 자식 클래스에서 접근 가능
 
         BlackBoxRefurbish b1 = new BlackBoxRefurbish();
         b1.modelName = "까망아";

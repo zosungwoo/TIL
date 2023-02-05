@@ -36,6 +36,7 @@ public class _02_GenericClass {
         c5.ready();
         int c5Name = c5.name;  // 형변환이 필요 없음
 
+
         Coffee<String> c6 = new Coffee<>("조세호");
         c6.ready();
         String c6Name = c6.name;  // 형변환이 필요 없음

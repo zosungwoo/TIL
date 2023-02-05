@@ -3,7 +3,7 @@ package chap_09;
 public class _03_WrapperClass {
     public static void main(String[] args) {
         Integer i = 123;
-        Double d= 3.14;
+        Double d = 3.14;
         Character c = 'a';
 
         System.out.println(i);

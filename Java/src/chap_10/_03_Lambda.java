@@ -28,6 +28,6 @@ public class _03_Lambda {
 //        return x + y;
 //    }
 
-    (x, y) -> x + y
+//    (x, y) -> x + y
 
 }

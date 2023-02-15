@@ -1,6 +1,6 @@
 package chap_07;
 
-public class _QUIZ_ {
+public class _QUIZ_07 {
     public static void main(String[] args) {
         HamBurger[] hamBurgers = new HamBurger[3];
         hamBurgers[0] = new HamBurger();

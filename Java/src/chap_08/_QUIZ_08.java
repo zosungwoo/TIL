@@ -2,11 +2,9 @@ package chap_08;
 
 import chap_08.camera.SpeedCam;
 import chap_08.detector.AccidentDetector;
-import chap_08.detector.Detectable;
-import chap_08.reporter.Reportable;
 import chap_08.reporter.VideoReporter;
 
-public class _QUIZ_ {
+public class _QUIZ_08 {
     public static void main(String[] args) {
         SpeedCam speedCam = new SpeedCam();
 

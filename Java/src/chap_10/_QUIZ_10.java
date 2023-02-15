@@ -2,7 +2,7 @@ package chap_10;
 
 import java.util.ArrayList;
 
-public class _QUIZ_ {
+public class _QUIZ_10 {
     public static void main(String[] args) {
         ArrayList<Customer> customers = new ArrayList<>();
         customers.add(new Customer("챈들러", 50));

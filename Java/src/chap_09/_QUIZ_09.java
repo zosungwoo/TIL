@@ -3,7 +3,7 @@ package chap_09;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class _QUIZ_ {
+public class _QUIZ_09 {
     public static void main(String[] args) {
         ArrayList<Student> list = new ArrayList<>();
 

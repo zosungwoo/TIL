@@ -33,7 +33,6 @@ public class _QUIZ_12 {
 
         Thread threadA = new Thread(a);
         Thread threadB = new Thread(b);
-        Thread threadSet = new Thread(set);
         threadA.start();
         threadB.start();
 
@@ -44,6 +43,10 @@ public class _QUIZ_12 {
             throw new RuntimeException(e);
         }
 
+        // 또 다른 방법
+//        while(threadA.isAlive() | threadB.isAlive()) { }
+
+        Thread threadSet = new Thread(set);
         threadSet.start();
     }
 }

@@ -9,7 +9,7 @@ public class _03_Join {
         thread.start();
 
         try {
-            thread.join(2500);  // 해당 쓰레드가 종료될 때 까지 기다렸다가 끝나 다음 줄로 (매개변수: 2.5초 대기)
+            thread.join(2500);  // 해당 쓰레드가 종료될 때 까지 기다렸다가 끝나 다음 줄로 (매개변수: 2.5초 대기. 없으면 끝날때까지)
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

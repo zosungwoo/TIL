@@ -19,9 +19,9 @@ public class _05_Synchronization {
                         throw new RuntimeException(e);
                     }
 
-                    if(i == 2){
-                        throw new RuntimeException("못해먹겠다!!!");
-                    }
+//                    if(i == 2){
+//                        throw new RuntimeException("못해먹겠다!!!");
+//                    }
 
                 }
                 System.out.println("-- 직원1 청소 끝 --");

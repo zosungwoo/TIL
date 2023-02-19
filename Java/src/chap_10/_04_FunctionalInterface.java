@@ -10,7 +10,7 @@ public class _04_FunctionalInterface {
 
 //        convertUSD(converter, 1);
 
-        // 람다식 사용 2
+        // 람다식 사용 1
 //        convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD*1400) + "원"), 1);
 
         // 람다식 사용 2

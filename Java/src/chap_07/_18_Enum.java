@@ -11,7 +11,7 @@ public class _18_Enum {
         System.out.println(resolution);
 
         resolution = Resolution.FHD;
-        System.out.print(resolution);
+        System.out.println(resolution);
 
         System.out.println("동영상 녹화 품질: ");
         switch (resolution){

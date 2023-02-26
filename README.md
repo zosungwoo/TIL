@@ -1,8 +1,6 @@
 # TIL
 
-<br>
-
-## Java
+### Java
 1. [Data Type and Variable](./Java/src/chap_01)
 2. [Operator](./Java/src/chap_02)
 3. [String](./Java/src/chap_03)

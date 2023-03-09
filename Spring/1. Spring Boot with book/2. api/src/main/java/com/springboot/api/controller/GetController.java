@@ -1,5 +1,6 @@
 package com.springboot.api.controller;
 
+import com.springboot.api.dto.MemberDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -47,6 +48,13 @@ public class GetController {
         });
 
         return sb.toString();
+    }
+
+    // http://localhost:8080/api/v1/get-api/request3?name=value1&email=value2&organization=value3
+    @GetMapping(value = "/request3")
+    public String getRequestParam3(MemberDto memberDto){  // 쿼리 스트링의 키가 정해져 있지만 받아야 할 파라미터가 많을 경우 DTO 객체 활용해 가독성 업!
+//        return memberDto.getName() + " " + memberDto.getEmail() + " " + memberDto.getOrganization();
+        return memberDto.toString();
     }
 
 }

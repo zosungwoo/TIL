@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cdbd578-3f04-4a42-aff4-42bc23343a45" name="Changes" comment="">
+    <list default="true" id="8cdbd578-3f04-4a42-aff4-42bc23343a45" name="Changes" comment="Add Implementation problem solution">
+      <change afterPath="$PROJECT_DIR$/../Spring/1. Spring Boot with book/hello/src/main/java/com/springboot/hello/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/4_.py" beforeDir="false" afterPath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/4_게임_개발.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677427336907</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Implementation problem solution">
+      <created>1677930353649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677930353649</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -62,5 +70,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Implementation problem solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Implementation problem solution" />
   </component>
 </project>

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cdbd578-3f04-4a42-aff4-42bc23343a45" name="Changes" comment="Add Implementation problem solution" />
+    <list default="true" id="8cdbd578-3f04-4a42-aff4-42bc23343a45" name="Changes" comment="Add Implementation problem solution">
+      <change afterPath="$PROJECT_DIR$/[Book] Python For Coding Test/Part2. Practice/3. DFS_BFS/0-1. DFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Book] Python For Coding Test/Part2. Practice/3. DFS_BFS/0-2. BFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/1_Greedy/1_큰수의_법칙.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/1_Greedy/1_큰수의_법칙_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/1_Greedy/2_숫자_카드_게임.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/1_Greedy/3_1이_될_때까지.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/1_Greedy/3_1이_될_때까지_참고.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/1_상하좌우.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/1_상하좌우_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/2_시각.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/2_시각_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/3_왕실의_나이트.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Book]_Python_For_Coding_Test/Part2_Practice/2_Implementation/4_게임_개발.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/1. Spring Boot with book/2. api/src/main/java/com/springboot/api/controller/GetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/1. Spring Boot with book/2. api/src/main/java/com/springboot/api/controller/GetController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

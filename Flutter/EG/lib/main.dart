@@ -46,7 +46,7 @@ class _FirstPageState extends State<FirstPage> {
           TextButton(
             onPressed: () {
               setState(() {
-                _controller.text += '\nWhat does the above sentence mean?';  // 해당 문장의 의미를 묻는 프롬프트 추가
+                _controller.text += '\nWhat is the meaning of the sentence above?';  // 해당 문장의 의미를 묻는 프롬프트 추가
               });
             },
             child: const Text('Meaning'),

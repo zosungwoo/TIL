@@ -1,4 +1,4 @@
-package org.example;
+package org.example.basic;
 
 public class Email {
     // 데이터 추상화
@@ -15,5 +15,14 @@ public class Email {
     @Override
     public String toString() {
         return from + " -> " + to;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Email objEmail = (Email) obj;
+
+        if(from == objEmail.from && to == objEmail.to)
+            return true;
+        return false;
     }
 }

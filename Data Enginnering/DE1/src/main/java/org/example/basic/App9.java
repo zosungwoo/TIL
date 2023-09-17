@@ -1,11 +1,10 @@
-package org.example;
+package org.example.basic;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashSet;
 
-public class App10 {
+public class App9 {
 
     public static Email[] getData() throws IOException {
         Email[] data = new Email[420045];
@@ -30,12 +29,27 @@ public class App10 {
     public static void main(String[] args) throws IOException {
         Email[] data = getData();
 
-        HashSet<Integer> senders = new HashSet<Integer>();
+        Integer[] senders = new Integer[300000];
         for(Email email: data){
             int from = email.from;
-            senders.add(from);
+            for(int i = 0; i < senders.length; i++){
+                if(senders[i] == null) {
+                    // from이 senders의 null에 도달할때까지 같은게 없었다면 해당 값이 없는 것이므로 추가
+                    senders[i] = from;
+                    break;
+                }
+                if(from == senders[i])
+                    break;
+            }
         }
 
-        System.out.println(senders.size());
+        int senderCount = 0;
+        for(int i=0; i<senders.length; i++)
+        {
+            if(senders[i] == null)
+                break;
+            senderCount++;
+        }
+        System.out.println(senderCount);
     }
 }

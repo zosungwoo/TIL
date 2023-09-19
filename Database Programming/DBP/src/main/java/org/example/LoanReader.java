@@ -1,15 +1,11 @@
 package org.example;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 
-public class LaonReader {
+public class LoanReader {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Database Programming/DBP/src/main/java/org/example/loan.txt"));
         ArrayList<Loan> loanList = new ArrayList<>();

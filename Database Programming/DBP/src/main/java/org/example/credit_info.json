@@ -1,0 +1,22 @@
+[
+  {
+    "customer_name": "Curry",
+    "branch_name": 2000,
+    "credit_balance": 1750
+  },
+  {
+    "customer_name": "Hayes",
+    "branch_name": 1500,
+    "credit_balance": 1500
+  },
+  {
+    "customer_name": "Jones",
+    "branch_name": 6000,
+    "credit_balance": 700
+  },
+  {
+    "customer_name": "Smith",
+    "branch_name": 2000,
+    "credit_balance": 400
+  }
+]

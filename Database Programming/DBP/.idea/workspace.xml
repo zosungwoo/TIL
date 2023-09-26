@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="modify configuration" />
+    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="reorganize directory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/account.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/AccountLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/JsonTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/XMLTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/콘솔실습.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week2_2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/App2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CreditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/CreditInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/JsonTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/JsonTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoanReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/LoanReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/credit_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/credit_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/loan.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +44,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2VHBYjhd5iJbhESeSNeGjsBG5Iu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +59,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/sungwoo/Desktop/TIL/Database Programming/DBP",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -46,58 +70,21 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/week4_2" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JsonTest2">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="dbp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App2" />
-      <module name="dbp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.JsonTest1" />
-      <module name="dbp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.JsonTest2" />
+  <component name="RunManager" selected="Application.org.example.week4_1.Test2">
+    <configuration name="AccountLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.week3_3.AccountLoader" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.week2_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +92,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LoanReader" />
-      <module name="dbp" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Test1" />
+      <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.week2_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Test2" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.week2_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.week3_3.XMLTest1" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.week2_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.week4_1.Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.week4_1.Test2" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.week4_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JsonTest2" />
-        <item itemvalue="Application.JsonTest1" />
-        <item itemvalue="Application.LoanReader" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.App2" />
+        <item itemvalue="Application.org.example.week4_1.Test2" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.AccountLoader" />
+        <item itemvalue="Application.XMLTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695679944397</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modify configuration">
+      <option name="closed" value="true" />
+      <created>1695680152173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695680152173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,7 +209,8 @@
     <MESSAGE value="[DB Programming] rename file" />
     <MESSAGE value="[DB Programming] manipulate json format data" />
     <MESSAGE value="modify configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify configuration" />
+    <MESSAGE value="reorganize directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganize directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week2_2;
 
 import java.sql.*;
 

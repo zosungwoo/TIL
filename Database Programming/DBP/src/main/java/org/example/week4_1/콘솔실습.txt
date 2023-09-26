@@ -1,0 +1,18 @@
+MariaDB [dbp]> create or replace table student ( name varchar(50) not null, student_id varchar(50), degree_level varchar(50), semester int, check (degree_level in ('Bachelors', 'Masters', 'Doctorate')), check (semester > 3));
+Query OK, 0 rows affected (0.019 sec)
+
+MariaDB [dbp]> insert into student values('Jack', 615458, 'Doctorate', 5)
+    -> ;
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [dbp]> insert into student values('James', 615455, 'Bachelors', 2)
+    -> ;
+ERROR 4025 (23000): CONSTRAINT `CONSTRAINT_2` failed for `dbp`.`student`
+
+
+
+
+MariaDB [dbp]> create table x (a int, b int);
+Query OK, 0 rows affected (0.023 sec)
+MariaDB [dbp]> create table y (c int, d int, check (c in (select a from x)));
+ERROR 1901 (HY000): Function or expression 'select ...' cannot be used in the CHECK clause of `CONSTRAINT_1`

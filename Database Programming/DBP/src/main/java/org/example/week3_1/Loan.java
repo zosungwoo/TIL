@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week3_1;
 
 public class Loan {
     String loanNumber;

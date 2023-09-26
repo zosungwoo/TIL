@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week3_2;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week3_1;
 
 import java.util.HashSet;
 import java.util.Iterator;

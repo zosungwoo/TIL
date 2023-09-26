@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week3_2;
 
 public class CreditInfo {
     String customerName;

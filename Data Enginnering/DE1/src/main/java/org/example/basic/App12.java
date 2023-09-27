@@ -9,7 +9,7 @@ public class App12 {
     public static Email[] getData() throws IOException {
         Email[] data = new Email[420045];
 
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int index = 0;
         while (true) {
             String line = br.readLine();

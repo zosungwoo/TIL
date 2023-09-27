@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class App4 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int min = Integer.MAX_VALUE;
         while (true) {
             String line = br.readLine();

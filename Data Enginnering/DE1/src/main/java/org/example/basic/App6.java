@@ -8,7 +8,7 @@ import java.io.IOException;
 public class App6 {
 
     public static void app2() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int lineCount = 0;
         while (true) {
             String line = br.readLine();
@@ -25,7 +25,7 @@ public class App6 {
         br.close();
     }
     public static void app3() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int eventCount = 0;
         while (true) {
             String line = br.readLine();
@@ -42,7 +42,7 @@ public class App6 {
         br.close();
     }
     public static void app4() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int min = Integer.MAX_VALUE;
         while (true) {
             String line = br.readLine();
@@ -64,7 +64,7 @@ public class App6 {
         br.close();
     }
     public static void app5() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
         int max = Integer.MIN_VALUE;
         while (true) {
             String line = br.readLine();

@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="reorganize directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/account.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/AccountLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/JsonTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_3/XMLTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/week4_1/콘솔실습.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="[DB Programming] DDL java programming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week2_2/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/App2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CreditInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/CreditInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/JsonTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_2/JsonTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/Loan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoanReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/week3_1/LoanReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/credit_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/credit_info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/loan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/loan.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +21,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zosungwoo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="591fe309-1ab0-4da8-88bb-fa9609040b5a" />
+        <option name="url" value="https://github.com/zosungwoo/TIL.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -200,7 +195,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695680152173</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reorganize directory">
+      <option name="closed" value="true" />
+      <created>1695743609060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743609060</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[DB Programming] manipulate xml format data">
+      <option name="closed" value="true" />
+      <created>1695743664445</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743664445</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[DB Programming] DDL java programming">
+      <option name="closed" value="true" />
+      <created>1695743691044</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743691044</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,7 +229,9 @@
     <MESSAGE value="[DB Programming] manipulate json format data" />
     <MESSAGE value="modify configuration" />
     <MESSAGE value="reorganize directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganize directory" />
+    <MESSAGE value="[DB Programming] manipulate xml format data" />
+    <MESSAGE value="[DB Programming] DDL java programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="[DB Programming] DDL java programming" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

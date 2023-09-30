@@ -1,0 +1,35 @@
+package org.example.arraylist.implimentation;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyArrayListExample8 {
+    public static void main(String[] args) {
+        List<Integer> list = new MyArrayList<Integer>();
+
+        list.add(0, 3);
+        list.add(1, 5);
+        list.add(2, 3);
+        list.add(1, 9);
+
+        System.out.println(list);
+        System.out.println(list.set(3, 10));
+        System.out.println(list);
+
+//        list.set(4, 15); // error
+
+
+        // remove 메소드는 총 2개 (index로, object로)
+
+//        list.remove(10);  -> out of index error! (Object 클래스를 상속받는 클래스의 인스턴스가 와야 object로 찾을 수 있음)
+        list.remove(Integer.valueOf(10));  // 지워지면 true 반환
+        System.out.println(list);
+
+          // index로 지우기
+        System.out.println(list.remove(0));  // 지워진 값 반환
+        System.out.println(list);
+
+        System.out.println(list.remove(Integer.valueOf(50))); // 없으면 false 반환
+        System.out.println(list.remove(10)); // 없으면 outofindex
+    }
+}

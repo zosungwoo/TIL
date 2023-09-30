@@ -27,6 +27,6 @@ public class ArrayListExample14 {
 
         list.add(10);
         System.out.println(list);
-        System.out.println(subList);  // 수정이 일어나서 오류 발생
+//        System.out.println(subList);  // 수정이 일어나서 오류 발생
     }
 }

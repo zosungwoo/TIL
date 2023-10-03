@@ -8,6 +8,10 @@ import org.xml.sax.InputSource;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,13 +26,12 @@ public class AccountLoader {
                 list) {
             text += line + "\n";
         }
+        r.close();
 
 //        System.out.println(text);
 
 
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new InputSource(new StringReader(text)));
-
-//        System.out.println(XMLTest1.toString(doc));
 
         NodeList accounts = doc.getElementsByTagName("account");
 
@@ -50,12 +53,43 @@ public class AccountLoader {
             }
         }
 
-        for (Account a :
-                accountList) {
-            System.out.println(a);
+//        for (Account a :
+//                accountList) {
+//            System.out.println(a);
+//        }
+
+        // connection 을 맺어야 한다.
+        String id = "root";
+        String password = "1234";
+        Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306", id, password);
+
+        Statement stmt = connection.createStatement();
+        stmt.executeUpdate("CREATE OR REPLACE DATABASE dbp_account;");
+        stmt.executeUpdate("USE dbp_account;");
+        stmt.executeUpdate("CREATE TABLE account (account_number VARCHAR(50), branch_name VARCHAR(50), balance INTEGER);");
+
+
+        for (Account a : accountList) {
+            String str = "INSERT INTO account VALUES('" + a.getAccountNumber() + "','" + a.getBranchName() + "'," + a.getBalance() + ");";
+            stmt.executeUpdate(str);
         }
 
-        r.close();
+
+        // database 저장 종료
+
+        ResultSet rs = stmt.executeQuery("SELECT * FROM account;");
+        while (rs.next()) {
+            String accountNumber = rs.getString(1);  // 1부터 시작!!!
+            String branchName = rs.getString(2);
+            int balance = rs.getInt(3);
+            System.out.println(new Account(accountNumber, branchName, balance).toString());
+        }
+
+
+
+
+
+
 
     }
 }

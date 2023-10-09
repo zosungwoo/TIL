@@ -1,10 +1,8 @@
-package org.example.week3_4;
+package org.example.class3_4;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
 
-public class SQLProgramming1 {
+public class SQLProgramming6 {
     public static void main(String[] args) throws Exception {
 
         String id = "root";
@@ -12,8 +10,10 @@ public class SQLProgramming1 {
         Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306", id, password);
 
         Statement stmt = connection.createStatement();
-        stmt.executeUpdate("CREATE OR REPLACE DATABASE dbp;");
-        stmt.executeUpdate("USE dbp;");
+        stmt.executeUpdate("DROP DATABASE IF EXISTS dbp;");
+        SQLWarning warnings = stmt.getWarnings();
+        System.out.println(warnings);
+
 
     }
 }

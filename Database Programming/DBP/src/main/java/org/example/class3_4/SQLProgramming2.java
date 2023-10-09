@@ -1,8 +1,7 @@
-package org.example.week3_4;
+package org.example.class3_4;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SQLProgramming2 {

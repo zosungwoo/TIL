@@ -1,4 +1,4 @@
-package org.example.week3_3;
+package org.example.class3_3;
 
 public class Account {
     String accountNumber;

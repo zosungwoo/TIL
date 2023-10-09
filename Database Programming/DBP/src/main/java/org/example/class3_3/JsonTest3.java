@@ -1,4 +1,4 @@
-package org.example.week3_3;
+package org.example.class3_3;
 
 import org.json.JSONArray;
 import org.json.JSONException;

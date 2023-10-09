@@ -1,4 +1,4 @@
-package org.example.week4_1;
+package org.example.class4_1;
 
 
 import java.sql.Connection;

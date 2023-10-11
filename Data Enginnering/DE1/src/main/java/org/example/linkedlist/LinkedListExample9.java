@@ -20,5 +20,6 @@ public class LinkedListExample9 {
 
         System.out.println(linkedList.element());
         System.out.println(linkedList.peek());
+        System.out.println(linkedList);
     }
 }

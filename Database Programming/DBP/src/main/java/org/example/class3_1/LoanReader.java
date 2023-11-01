@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class LoanReader {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Database Programming/DBP/src/main/java/org/example/loan.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Database Programming/DBP/src/main/java/org/example/data/loan.txt"));
         ArrayList<Loan> loanList = new ArrayList<>();
 
 

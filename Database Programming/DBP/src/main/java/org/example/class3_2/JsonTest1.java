@@ -28,18 +28,20 @@ public class JsonTest1 {
         borrower.put(new JSONObject().put("customer_name", "Curry").put("account_number","L-93"));
 
         System.out.println(borrower);
-
+        System.out.println();
 
         Set<String> keySet = obj.keySet();
 
         for (String key :
                 keySet) {
             Object value = obj.get(key);
+            System.out.println(key + " -> " + value);
 //            if(value instanceof String v)
 //                System.out.println(key + " -> " + v);
 //            if(value instanceof Boolean b)
 //                System.out.println(key + " -> " + b);
         }
+        System.out.println();
 
         Iterator<String> iterator = keySet.iterator();
         while (iterator.hasNext()) {
@@ -47,8 +49,9 @@ public class JsonTest1 {
             Object value = obj.get(key);
             System.out.println(key + " -> " + value);
         }
+        System.out.println();
 
-        JSONArray array = new JSONArray().put(obj).put(new JSONObject().put("customer_name", "Curry").put("loan_number", "L-93"));
+        JSONArray array = new JSONArray().put(obj).put(new JSONObject().put("customer_name", "Curry").put("loan_number", "L-93")).put("5");
         System.out.println(array);
 
         for(int i = 0 ; i <array.length() ;i ++){

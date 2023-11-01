@@ -11,7 +11,7 @@ import java.util.List;
 public class JsonTest2 {
 
     public static void main(String[] args) throws Exception{
-        BufferedReader r = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Database Programming/DBP/src/main/java/org/example/credit_info.json"));
+        BufferedReader r = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Database Programming/DBP/src/main/java/org/example/data/credit_info.json"));
 
         String text = "";
         while(true){
@@ -25,7 +25,7 @@ public class JsonTest2 {
 
         JSONArray arr = new JSONArray(text);
         System.out.println(arr);
-        List<CreditInfo> creditInfos  = new ArrayList<CreditInfo>();
+        List<CreditInfo> creditInfos = new ArrayList<CreditInfo>();
 
         for(Object v: arr){
             JSONObject o = (JSONObject) v;

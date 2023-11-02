@@ -209,7 +209,7 @@ public class MyArrayList<E> implements List<E> {
 
     @Override
     public int lastIndexOf(Object o) {
-        for (int i = data.length-1;  i >= 0; i++) {
+        for (int i = data.length-1;  i >= 0; i--) {
             if (data[i].equals(o)) {
                 return i;
             }

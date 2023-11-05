@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class HashSetExample2 {
     public static void main(String[] args) {
-        Set<Integer> intHashSet= new HashSet<>();
+        Set<Integer> intHashSet= new HashSet<Integer>();
         System.out.println(intHashSet);
         System.out.println(intHashSet.isEmpty());
         System.out.println(intHashSet.size());

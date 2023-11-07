@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="[DB Programming] user defined function in SQL">
+    <list default="true" id="296a724c-8dc0-486d-9707-80749d1a865e" name="Changes" comment="[DB Programming] minor modification">
+      <change afterPath="$PROJECT_DIR$/../../Data Enginnering/DE1/src/main/java/org/example/linkedlist/implimentation/MyLinkedListListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Data Enginnering/DE1/src/main/java/org/example/linkedlist/implimentation/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Data Enginnering/DE1/src/main/java/org/example/linkedlist/implimentation/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,13 +76,13 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserDefinedFunction2">
-    <configuration name="SQLProgramming5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.week3_4.SQLProgramming5" />
+  <component name="RunManager" selected="Application.XMLTest1">
+    <configuration name="JsonTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.class3_2.JsonTest1" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.week3_4.*" />
+          <option name="PATTERN" value="org.example.class3_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLProgramming6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.week3_4.SQLProgramming6" />
+    <configuration name="JsonTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.class3_2.JsonTest2" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.week3_4.*" />
+          <option name="PATTERN" value="org.example.class3_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLProgramming7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.week3_4.SQLProgramming7" />
+    <configuration name="JsonTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.class3_3.JsonTest3" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.week3_4.*" />
+          <option name="PATTERN" value="org.example.class3_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDefinedFunction1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.class6_0.UserDefinedFunction1" />
+    <configuration name="LoanReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.class3_1.LoanReader" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.class6_0.*" />
+          <option name="PATTERN" value="org.example.class3_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDefinedFunction2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.class6_0.UserDefinedFunction2" />
+    <configuration name="XMLTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.class3_3.XMLTest1" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.class6_0.*" />
+          <option name="PATTERN" value="org.example.class3_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserDefinedFunction2" />
-        <item itemvalue="Application.UserDefinedFunction1" />
-        <item itemvalue="Application.SQLProgramming5" />
-        <item itemvalue="Application.SQLProgramming7" />
-        <item itemvalue="Application.SQLProgramming6" />
+        <item itemvalue="Application.XMLTest1" />
+        <item itemvalue="Application.JsonTest3" />
+        <item itemvalue="Application.JsonTest2" />
+        <item itemvalue="Application.JsonTest1" />
+        <item itemvalue="Application.LoanReader" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696856986355</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[DB Programming] minor modification">
+      <option name="closed" value="true" />
+      <created>1698798405875</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698798405875</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,7 +268,8 @@
     <MESSAGE value="[DB Programming] DDL java programming" />
     <MESSAGE value="[DB Programming] modify package name" />
     <MESSAGE value="[DB Programming] user defined function in SQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="[DB Programming] user defined function in SQL" />
+    <MESSAGE value="[DB Programming] minor modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="[DB Programming] minor modification" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,15 +1,13 @@
-package org.example.basic;
+package org.example.hashmap;
 
-import java.util.Objects;
-
-public class Email {
+public class NewEmail {
     // 데이터 추상화
     int from;
     int to;
 
     // 프로시저 추상화
 
-    public Email(int from, int to) {
+    public NewEmail(int from, int to) {
         this.from = from;
         this.to = to;
     }
@@ -21,7 +19,7 @@ public class Email {
 
     @Override
     public boolean equals(Object obj) {
-        Email objEmail = (Email) obj;
+        NewEmail objEmail = (NewEmail) obj;
 
         if(from == objEmail.from && to == objEmail.to)
             return true;
@@ -30,7 +28,7 @@ public class Email {
 
     @Override
     public int hashCode() {
-        return from + to;
+        return from + to;  // hash table의 주소를 나타냄 (단순히 1이라고 써도 작동하나 이는 해쉬테이블을 링크드리스트로 만드는 것과 같은 의미없는 짓)
     }
 
     public int getFrom() {

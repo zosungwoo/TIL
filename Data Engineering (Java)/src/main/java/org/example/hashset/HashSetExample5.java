@@ -14,7 +14,7 @@ public class HashSetExample5 {
     public static HashSet<Integer> getHastSetID() throws IOException {  // App13 수정
         HashSet<Integer> data = new HashSet<>();
 
-        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Enginnering/DE1/src/main/java/org/example/data/email.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/sungwoo/Desktop/TIL/Data Engineering (Java)/src/main/java/org/example/data/email.txt"));
         int index = 0;
         while (true) {
             String line = br.readLine();

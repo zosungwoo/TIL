@@ -1,12 +1,14 @@
 package org.example.hashset;
 
+import org.example.hashset.implementation.MyHashSet;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
 public class HashSetExample2 {
     public static void main(String[] args) {
-        Set<Integer> intHashSet= new HashSet<Integer>();
+        Set<Integer> intHashSet= new MyHashSet<Integer>();
         System.out.println(intHashSet);
         System.out.println(intHashSet.isEmpty());
         System.out.println(intHashSet.size());

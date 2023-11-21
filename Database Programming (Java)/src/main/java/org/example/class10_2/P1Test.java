@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 public class P1Test {
+    ///////// 안보고 할 수 있어야함 (시험에 나온대)
     public static void main(String[] args) throws Exception {
         BufferedOutputStream o = new BufferedOutputStream(new FileOutputStream("/Users/sungwoo/Desktop/TIL/Database Programming/src/main/java/org/example/class10_2/test.txt"));
 

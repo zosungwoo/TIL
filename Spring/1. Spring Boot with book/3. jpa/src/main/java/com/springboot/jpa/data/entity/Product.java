@@ -17,6 +17,9 @@ public class Product {
     @Column(nullable = false)
     private Integer price;
 
+    @Column(nullable = false)
+    private Integer stock;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
@@ -58,5 +61,13 @@ public class Product {
 
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
     }
 }

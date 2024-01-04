@@ -6,6 +6,9 @@ import com.springboot.jpa.data.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+import java.util.Optional;
+
 @Component  // 클래스를 스프링이 관리하는 빈으로 등록하려면 @Component 또는 @Service 어노테이션 지정
 public class ProductDAOImpl implements ProductDAO {
 
@@ -18,21 +21,45 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public Product insertProduct(Product product) {
-        return null;
+        Product savedProduct = productRepository.save(product);
+        return savedProduct;
     }
 
     @Override
     public Product selectProduct(Long number) {
-        return null;
+        Product selectedProduct = productRepository.getById(number);
+        return selectedProduct;
     }
 
     @Override
-    public Product updateProductName(Long number, String name) {
-        return null;
+    public Product updateProductName(Long number, String name) throws Exception {
+        Optional<Product> selectedProduct = productRepository.findById(number);
+
+        Product updatedProduct;
+        if (selectedProduct.isPresent()) {
+            Product product = selectedProduct.get();
+
+            product.setName(name);
+            product.setUpdatedAt(LocalDateTime.now());
+
+            updatedProduct = productRepository.save(product);
+        }else{
+            throw new Exception();
+        }
+
+        return updatedProduct;
     }
 
     @Override
     public void deleteProduct(Long number) throws Exception {
+        Optional<Product> selectedProduct = productRepository.findById(number);
 
+        if (selectedProduct.isPresent()) {
+            Product product = selectedProduct.get();
+
+            productRepository.delete(product);
+        } else{
+            throw new Exception();
+        }
     }
 }

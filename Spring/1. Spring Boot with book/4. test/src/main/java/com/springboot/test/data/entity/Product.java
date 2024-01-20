@@ -1,18 +1,18 @@
-package com.springboot.jpa.data.entity;
+package com.springboot.test.data.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode
+@ToString(exclude = "name")
 @Table(name = "product")  // 명시 안해도 되나, 테이블 이름과 클래스 이름이 다르다면 테이블명 명시
 public class Product {
     @Id  // 테이블의 기본키
@@ -29,5 +29,6 @@ public class Product {
     private Integer stock;
 
     private LocalDateTime createdAt;
+
     private LocalDateTime updatedAt;
 }

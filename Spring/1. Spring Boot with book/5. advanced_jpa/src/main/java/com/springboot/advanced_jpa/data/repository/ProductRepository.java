@@ -93,4 +93,15 @@ public interface ProductRepository extends JpaRepository<Product, Long> {  // �
     // 페이징 쿼리 메서드 호출: Page<Product> productPage = productRepository.findByName("펜", PageRequest.of(0, 2));
     Page<Product> findByName(String name, Pageable pageable);
 
+    /* @Query 어노테이션을 활용한 메소드 작성 */
+    // 직접 JPQL 작성 (JPA 구현체에서 자동으로 쿼리 문장을 해석하고 실행)
+    @Query("SELECT p FROM Product p WHERE p.name = ?1")  // ?1: 파라미터를 전달받기 위한 인자 (1: 첫번째 파라미터) -> 순서가 바뀌면 오류 발생 가능성 -> @Param 사용
+    List<Product> findByName(String name);
+
+    @Query("SELECT p FROM Product p WHERE p.name = :name")  // 파라미터를 바인딩 -> 가독성 높아짐, 유지보수 수월해짐
+    List<Product> findByNameParam(@Param("name") String name);
+
+    @Query("SELECT p.name, p.price, p.stock FROM Product p WHERE p.name = :name")  // 엔티티 타입이 아닌 원하는 컬럼의 값만 추출
+    List<Object[]> findByNameParam2(@Param("name") String name);
+
 }

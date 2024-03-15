@@ -1,5 +1,6 @@
 package hellojpa;
 
+import hellojpa.entity.Member;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -78,7 +79,15 @@ public class JpaMain {
 //
 //            transaction.commit(); // [트랜잭션] 커밋
 
+            Member member = new Member();
+            member.setName("asdf");
 
+            System.out.println("=============");
+            em.persist(member);
+            System.out.println(member.getId());
+            System.out.println("=============");
+
+            
 
             tx.commit();  // 커밋 직전에 업데이트 쿼리를 만들어 날림
         } catch (Exception e) {

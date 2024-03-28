@@ -1,6 +1,7 @@
 package jpashop;
 
 import jakarta.persistence.*;
+import jpashop.domain.Book;
 import jpashop.domain.Member;
 
 public class JpaMain {
@@ -14,11 +15,11 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member();
-            member.setName("조성우");
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
 
-            em.persist(member);
-            System.out.println(member.getId());
+            em.persist(book);
 
             tx.commit();  // 커밋 직전에 업데이트 쿼리를 만들어 날림
         } catch (Exception e) {

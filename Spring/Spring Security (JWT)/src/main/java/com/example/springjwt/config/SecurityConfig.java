@@ -103,6 +103,10 @@ public class SecurityConfig {
         http
                 .addFilterBefore(new JWTFilter(jwtUtil), LoginFilter.class);
 
+                // CustomLogoutFilter 등록
+        http
+                .addFilterBefore(new CustomLogoutFilter(jwtUtil, refreshRepository), LogoutFilter.class);
+
                 //세션 설정
         http
                 .sessionManagement((session) -> session

@@ -1,6 +1,8 @@
 package com.example.springjwt.jwt;
 
 import com.example.springjwt.dto.CustomUserDetails;
+import com.example.springjwt.entity.RefreshEntity;
+import com.example.springjwt.repository.RefreshRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,6 +16,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.Iterator;
 
 public class LoginFilter extends UsernamePasswordAuthenticationFilter {
@@ -21,10 +24,12 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
     private final AuthenticationManager authenticationManager;
     // JWTUtil 주입
     private final JWTUtil jwtUtil;
+    private final RefreshRepository refreshRepository;
 
-    public LoginFilter(AuthenticationManager authenticationManager, JWTUtil jwtUtil) {
+    public LoginFilter(AuthenticationManager authenticationManager, JWTUtil jwtUtil, RefreshRepository refreshRepository) {
         this.authenticationManager = authenticationManager;
         this.jwtUtil = jwtUtil;
+        this.refreshRepository = refreshRepository;
     }
 
     @Override
@@ -58,6 +63,9 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
         String access = jwtUtil.createJwt("access", username, role, 600000L);  // 10분
         String refresh = jwtUtil.createJwt("refresh", username, role, 86400000L);  // 24시간
 
+        //Refresh 토큰 저장
+        addRefreshEntity(username, refresh, 86400000L);
+
         //응답 설정
         response.setHeader("access", access);
         response.addCookie(createCookie("refresh", refresh));
@@ -79,5 +87,17 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
         cookie.setHttpOnly(true);  // 클라이언트 단에서 JS로 쿠키에 접근하지 못하도록 함 (보안)
 
         return cookie;
+    }
+
+    private void addRefreshEntity(String username, String refresh, Long expiredMs) {
+
+        Date date = new Date(System.currentTimeMillis() + expiredMs);
+
+        RefreshEntity refreshEntity = new RefreshEntity();
+        refreshEntity.setUsername(username);
+        refreshEntity.setRefresh(refresh);
+        refreshEntity.setExpiration(date.toString());
+
+        refreshRepository.save(refreshEntity);
     }
 }

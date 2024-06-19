@@ -34,10 +34,20 @@ public class JpaMain {
 //            List<Member> resultList = em.createQuery("select m from Member m", Member.class)
 //                    .getResultList();
 
-            List<MemberDto> resultList = em.createQuery("select new jpql.MemberDto(m.username, m.age) from Member m", MemberDto.class)
+//            List<MemberDto> resultList = em.createQuery("select new jpql.MemberDto(m.username, m.age) from Member m", MemberDto.class)
+//                    .getResultList();
+//            System.out.println(resultList.get(0).getUsername());
+//            System.out.println(resultList.get(0).getAge());
+
+            List<Member> resultList = em.createQuery("select m from Member m order by m.age desc", Member.class)
+                    .setFirstResult(0)
+                    .setMaxResults(10)
                     .getResultList();
-            System.out.println(resultList.get(0).getUsername());
-            System.out.println(resultList.get(0).getAge());
+
+            System.out.println(resultList.size());
+            for (Member member1 : resultList) {
+                System.out.println(member1);
+            }
 
 
             tx.commit();

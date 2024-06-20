@@ -15,12 +15,12 @@ public class JpaMain {
         tx.begin();
 
         try {
-            // 등록
-            Member member = new Member();
-            member.setUsername("member1");
-            member.setAge(10);
-            em.persist(member);
+//            Member member = new Member();
+//            member.setUsername("member1");
+//            member.setAge(10);
+//            em.persist(member);
 
+            // 기본 문법과 쿼리
 //            TypedQuery<Member> query = em.createQuery("select m from Member m where m.username = :username", Member.class);
 //            query.setParameter("username", "member1");
 //            List<Member> resultList = query.getResultList();
@@ -31,6 +31,8 @@ public class JpaMain {
 //                System.out.println(member1);
 //            }
 
+
+            // 프로젝션
 //            List<Member> resultList = em.createQuery("select m from Member m", Member.class)
 //                    .getResultList();
 
@@ -39,15 +41,36 @@ public class JpaMain {
 //            System.out.println(resultList.get(0).getUsername());
 //            System.out.println(resultList.get(0).getAge());
 
-            List<Member> resultList = em.createQuery("select m from Member m order by m.age desc", Member.class)
-                    .setFirstResult(0)
-                    .setMaxResults(10)
+
+            // 페이징
+//            List<Member> resultList = em.createQuery("select m from Member m order by m.age desc", Member.class)
+//                    .setFirstResult(0)
+//                    .setMaxResults(10)
+//                    .getResultList();
+//
+//            System.out.println(resultList.size());
+//            for (Member member1 : resultList) {
+//                System.out.println(member1);
+//            }
+
+
+            // 조인
+            Team team = new Team();
+            team.setName("teamA");
+            em.persist(team);
+
+            Member member = new Member();
+            member.setUsername("member1");
+            member.setAge(10);
+            member.setTeam(team);
+            em.persist(member);
+
+            em.flush();
+            em.clear();
+
+            List<Member> resultList = em.createQuery("select m from Member m inner join m.team t", Member.class)
                     .getResultList();
 
-            System.out.println(resultList.size());
-            for (Member member1 : resultList) {
-                System.out.println(member1);
-            }
 
 
             tx.commit();

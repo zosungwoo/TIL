@@ -54,24 +54,58 @@ public class JpaMain {
 //            }
 
 
-            // 조인
-            Team team = new Team();
-            team.setName("teamA");
-            em.persist(team);
+//            // 조인
+//            Team team = new Team();
+//            team.setName("teamA");
+//            em.persist(team);
+//
+//            Member member = new Member();
+//            member.setUsername("member1");
+//            member.setAge(10);
+//            member.setTeam(team);
+//            em.persist(member);
+//
+//            em.flush();
+//            em.clear();
+//
+//            List<Member> resultList = em.createQuery("select m from Member m inner join m.team t", Member.class)
+//                    .getResultList();
 
-            Member member = new Member();
-            member.setUsername("member1");
-            member.setAge(10);
-            member.setTeam(team);
-            em.persist(member);
+
+
+            // fetch 조인
+            Team teamA = new Team();
+            teamA.setName("teamA");
+            em.persist(teamA);
+
+            Team teamB = new Team();
+            teamB.setName("teamB");
+            em.persist(teamB);
+
+            Member member1 = new Member();
+            member1.setUsername("member1");
+            member1.setTeam(teamA);
+            em.persist(member1);
+
+            Member member2 = new Member();
+            member2.setUsername("member2");
+            member2.setTeam(teamB);
+            em.persist(member2);
+
+            Member member3 = new Member();
+            member3.setUsername("member3");
+            member3.setTeam(teamB);
+            em.persist(member3);
 
             em.flush();
             em.clear();
 
-            List<Member> resultList = em.createQuery("select m from Member m inner join m.team t", Member.class)
+            List<Member> resultList = em.createQuery("select m from Member m join fetch m.team t", Member.class)
                     .getResultList();
 
-
+            for (Member member : resultList) {
+                System.out.println("member = " + member.getUsername() + ", " + member.getTeam().getName());
+            }
 
             tx.commit();
         } catch (Exception e) {
